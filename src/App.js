@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from './Logo.js';
-import BestPokemonFetcher from './BestPokemon.js';
+import BestPokemonSelector from './BestPokemon.js';
 import CaughtPokemon from './CaughtPokemon.js';
 
 
@@ -19,7 +19,8 @@ function App() {
 <div>
 
 <Logo handleClick={logWhenClicked} appName = "Pokedex"/>
-<BestPokemonFetcher />
+{/* <BestPokemonFetcher /> */}
+<BestPokemonSelector />
 <CaughtPokemon date = {new Date().toLocaleDateString()}/>
 </div>
 )}
